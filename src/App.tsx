@@ -796,7 +796,7 @@ function LinksWidget() {
     <div className="glass-panel" style={{ padding: 20 }}>
       <div style={{ fontFamily: 'Orbitron', fontSize: 8, color: '#2A4050', letterSpacing: '0.24em', marginBottom: 14 }}>// НАВИГАЦИЯ</div>
       {links.map(l => (
-        <a key={l.label} href="#" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', background: 'rgba(0,0,0,0.25)', border: '1px solid #0E1A28', fontFamily: 'Rajdhani', fontWeight: 600, fontSize: 14, color: '#4A6070', textDecoration: 'none', transition: 'all 0.18s', marginBottom: 5 }}
+        <a key={l.label} href={l.label === 'Discord сообщества' ? 'https://discord.gg/tqhwNTZgf3' : '#'} target={l.label === 'Discord сообщества' ? '_blank' : undefined} rel={l.label === 'Discord сообщества' ? 'noopener noreferrer' : undefined} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', background: 'rgba(0,0,0,0.25)', border: '1px solid #0E1A28', fontFamily: 'Rajdhani', fontWeight: 600, fontSize: 14, color: '#4A6070', textDecoration: 'none', transition: 'all 0.18s', marginBottom: 5 }}
           onMouseEnter={e => Object.assign((e.currentTarget as HTMLAnchorElement).style, { color: '#00D4FF', borderColor: 'rgba(0,212,255,0.18)', background: 'rgba(0,212,255,0.04)' })}
           onMouseLeave={e => Object.assign((e.currentTarget as HTMLAnchorElement).style, { color: '#4A6070', borderColor: '#0E1A28', background: 'rgba(0,0,0,0.25)' })}>
           <span>{l.icon}</span><span>{l.label}</span><span style={{ marginLeft: 'auto', opacity: 0.3 }}>›</span>
@@ -940,7 +940,7 @@ function SiteFooter() {
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
           {['Discord', 'Steam', 'Правила'].map(l => (
-            <a key={l} href="#" className="footer-link">{l}</a>
+            <a key={l} href={l === 'Discord' ? 'https://discord.gg/tqhwNTZgf3' : '#'} target={l === 'Discord' ? '_blank' : undefined} rel={l === 'Discord' ? 'noopener noreferrer' : undefined} className="footer-link">{l}</a>
           ))}
         </div>
       </div>

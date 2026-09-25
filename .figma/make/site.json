@@ -1,0 +1,11 @@
+{
+  "title": "Barotrauma — Clown Voyages",
+  "description": "This web application serves as a news management platform for Barotrauma game servers, allowing admins to create, edit, and manage server news while engaging players with real-time updates.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

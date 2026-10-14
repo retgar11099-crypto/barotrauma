@@ -1,0 +1,16 @@
+{
+  "name": "Barotrauma — Clown Voyages",
+  "short_name": "Barotrauma",
+  "description": "Новости и сообщество сервера Barotrauma.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#08131f",
+  "theme_color": "#08131f",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
